@@ -1,0 +1,213 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Metal Mania';
+    margin:0;
+}
+
+body, html {
+    height: 100%;
+}
+
+hr{
+    color: white;
+    margin-bottom: 0;
+    margin-top:0;
+    width:100%;
+}
+
+.background-logo {
+    background-image: url("images/logo.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-size: contain;
+    background-position:center;
+    opacity: 0.1;
+    z-index: -2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content {
+    padding-top: 70px;
+    opacity: 1;
+}
+
+.content-headline h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+h1 {
+    margin: 0;
+    padding: 16px 0;
+}
+
+/* Header / Navigation */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 24px;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 0;
+    width:100%;
+    max-width: 1140px;
+}
+
+.header-nav .crop{
+    height:60px;
+    padding-bottom: 10px;
+}
+
+.header-nav img{
+    width: 115px;
+    margin: -10px;
+}
+
+.header-nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Footer */
+
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 32px;
+    z-index: 100;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: black;
+  }
+
+.fa-facebook {
+    color: white;
+  }
+  
+.fa-twitter {
+    color: white;
+} 
+
+.fa-youtube {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.teaser-info{
+    text-align: center;
+}
+
+/* Video-Teaser */
+
+.video-teaser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 32px;
+    width: 69%;
+    font-size: 24px;
+}
+
+.video-container {
+    width: 100%;
+    padding-top: 100%;
+    height: 0px;
+    position: relative;
+}
+
+.video-container video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.video-teaser-container-horizontal{
+    display: flex;
+    justify-content: space-around;
+}
+
+.video-teaser-container-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Wartungs-Seite */
+
+.construction-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    font-size: 60px;
+}
+
+@media only screen and (min-width: 500px) {
+
+    .content {
+        padding-top: 120px;
+        opacity: 1;
+    }
+
+    .header {
+        font-size: 32px;
+    }
+
+    .header-nav .crop{
+        height:100px;
+    }
+    
+    .header-nav img{
+        width: 170px;
+    }
+
+    .video-teaser{
+        width: 39%;
+    }
+
+}
